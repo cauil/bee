@@ -14,6 +14,11 @@ function App() {
             <MenuItem index={1} disabled>color link2</MenuItem>
             <MenuItem index={2}>color link3</MenuItem>
           </Menu>
+          <Menu defaultIndex={0} mode='vertical' onSelect={(index) => {alert(index)}}>
+            <MenuItem index={0}>color link</MenuItem>
+            <MenuItem index={1} disabled>color link2</MenuItem>
+            <MenuItem index={2}>color link3</MenuItem>
+          </Menu>
         </div>
         <div>
           <Button>Hello</Button>
