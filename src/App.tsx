@@ -9,10 +9,10 @@ function App() {
     <div className="App">
       <header className="App-header">
         <div>
-          <Menu defaultIndex={0}>
-            <MenuItem>color link</MenuItem>
-            <MenuItem>color link2</MenuItem>
-            <MenuItem>color link3</MenuItem>
+          <Menu defaultIndex={0} onSelect={(index) => {alert(index)}}>
+            <MenuItem index={0}>color link</MenuItem>
+            <MenuItem index={1} disabled>color link2</MenuItem>
+            <MenuItem index={2}>color link3</MenuItem>
           </Menu>
         </div>
         <div>
