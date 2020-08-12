@@ -1,11 +1,20 @@
 import React from 'react';
 import Button from './components/Button/button'
+import Menu from './components/Menu/menu'
+import MenuItem from './components/Menu/menuItem'
 import './styles/index.scss';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <div>
+          <Menu defaultIndex={0}>
+            <MenuItem>color link</MenuItem>
+            <MenuItem>color link2</MenuItem>
+            <MenuItem>color link3</MenuItem>
+          </Menu>
+        </div>
         <div>
           <Button>Hello</Button>
           <Button disabled>Hello</Button>
